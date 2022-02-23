@@ -1,0 +1,102 @@
+:root {
+  --clr-primary-100: #8bacda;
+  --clr-primary-200: #00fff7;
+  --clr-neutral-100: white;
+  --clr-neutral-600: #2f415b;
+  --clr-neutral-700: #14253d;
+  --clr-neutral-800: #0d192b;
+  --ff: "Outfit", sans-serif;
+  --fw-100: 300;
+  --fw-200: 400;
+  --fw-300: 600;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--ff);
+  background-color: var(--clr-neutral-800);
+  line-height: 1.6;
+  height: 100vh;
+}
+
+p {
+  font-size: 1.125rem;
+  color: var(--clr-primary-100);
+}
+
+h2:hover {
+  color: var(--clr-primary-200);
+}
+
+.card {
+  background-color: var(--clr-neutral-700);
+  padding: 1.5em;
+  width: 20.4375em;
+  border-radius: 1em;
+}
+.card-header img {
+  width: 100%;
+  border-radius: 1em;
+}
+.card-body {
+  position: relative;
+}
+.card-body .top-information h2 {
+  color: var(--clr-neutral-100);
+}
+.card-body .top-information h2:hover {
+  color: var(--clr-primary-200);
+}
+.card-body .top-information p {
+  margin-bottom: 0;
+}
+.card-body .bottom-information {
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card-body .eth,
+.card-body .time {
+  display: flex;
+  align-items: center;
+  gap: 0 0.5em;
+}
+.card-body .ethereum-text {
+  color: var(--clr-primary-200);
+  font-weight: var(--fw-300);
+}
+.card-body::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: var(--clr-neutral-600);
+}
+.card-footer {
+  display: flex;
+  align-items: center;
+}
+.card-footer img {
+  max-width: 2em;
+  border: 1px solid var(--clr-neutral-100);
+  border-radius: 50%;
+  margin-right: 1em;
+}
+.card-footer span {
+  color: var(--clr-neutral-100);
+  font-weight: var(--fw-100);
+}
+.card-footer span:hover {
+  color: var(--clr-primary-200);
+}
+
+/*# sourceMappingURL=main.css.map */

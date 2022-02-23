@@ -1,0 +1,14 @@
+@use '../abstracts/variables' as *;
+
+
+:root{
+    @each $type, $shades in $colors{
+        @each $shade, $value in $shades{
+            --clr-#{$type}-#{$shade}: #{$value};
+        }
+    }
+    --ff: 'Outfit', sans-serif;
+    --fw-100: 300;
+    --fw-200: 400;
+    --fw-300: 600;
+}
