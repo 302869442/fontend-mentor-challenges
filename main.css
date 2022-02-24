@@ -63,7 +63,7 @@ h2:hover {
   transition: all 350ms ease-in-out;
 }
 .card-header::after {
-  content: url("/images/icon-view.svg");
+  content: url("../images/icon-view.svg");
   position: absolute;
   top: 42%;
   left: 42%;
