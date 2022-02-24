@@ -42,9 +42,35 @@ h2:hover {
   width: 20.4375em;
   border-radius: 1em;
 }
-.card-header img {
+.card-header {
+  width: 100%;
+  position: relative;
+}
+.card-header .header-img {
+  display: block;
   width: 100%;
   border-radius: 1em;
+  cursor: pointer;
+}
+.card-header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 1em;
+  background-color: rgba(0, 255, 247, 0.6);
+  transition: all 350ms ease-in-out;
+}
+.card-header::after {
+  content: url("/images/icon-view.svg");
+  position: absolute;
+  top: 42%;
+  left: 42%;
+  opacity: 0;
+}
+.card-header:hover::before, .card-header:hover::after {
+  opacity: 1;
 }
 .card-body {
   position: relative;
